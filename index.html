@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Reference</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Git quick reference</h1>
+      <div class="navbar">
+        <a href="index.html" class="chip" style="background: var(--bg3)">Git</a>
+        <a href="docker.html" class="chip">Docker</a>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="q"
+          placeholder="Search commands, descriptions..."
+        />
+      </div>
+      <div class="filter-row" id="chips"></div>
+      <div id="out"></div>
+    </div>
+    <script type="module">
+      import { data } from "./js/git-data.js";
+      import { initApp } from "./js/app.js";
+      initApp(data);
+    </script>
+  </body>
+</html>
