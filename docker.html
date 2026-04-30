@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git Reference</title>
+    <title>Docker Reference</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Git Quick Reference</h1>
+      <h1>Docker Quick Reference</h1>
       <div class="navbar">
-        <a href="index.html" class="chip" style="background: var(--bg3)">Git</a>
-        <a href="docker.html" class="chip">Docker</a>
+        <a href="index.html" class="chip">Git</a>
+        <a href="docker.html" class="chip" style="background: var(--bg3)"
+          >Docker</a
+        >
       </div>
       <div class="search-bar">
         <input
@@ -24,7 +26,7 @@
       <div id="out"></div>
     </div>
     <script type="module">
-      import { data } from "./js/git-data.js";
+      import { data } from "./js/docker-data.js";
       import { initApp } from "./js/app.js";
       initApp(data);
     </script>
